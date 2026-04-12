@@ -12,7 +12,7 @@ while True:
     print("4: Exit")
     print("-" * 20)
 
-    decision = int(input("Type 1 to add, 2 to delete, 3 to exit: "))
+    decision = int(input("Type 1 to add, 2 to search by phone, 3 to search by email, 4 to exit: "))
 
     if(decision == 1):
         name = input("\nEnter name: ")
