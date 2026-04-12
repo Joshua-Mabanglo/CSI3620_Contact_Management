@@ -30,28 +30,30 @@ while True:
         bst.display_sorted()
         
     
-elif decision == 2:
-    phone = input("Enter phone: ")
-    result = hash_table.search_by_phone(phone)
+    elif decision == 2:
+        phone = input("Enter phone: ")
+        result = hash_table.search_by_phone(phone)
 
-    if result:
-        print("Found:", result.name, result.phone, result.email)
+        if result:
+            print("Found:", result.name, result.phone, result.email)
+        else:
+            print("Contact not found.")
+
+    elif decision == 3:
+        email = input("Enter email: ")
+        result = hash_table.search_by_email(email)
+
+        if result:
+            print("Found:", result.name, result.phone, result.email)
+        else:
+            print("Contact not found.")
+
+    elif decision == 4:
+        print("Exiting program...")
+        break
+
     else:
-        print("Contact not found.")
-
-elif decision == 3:
-    email = input("Enter email: ")
-    result = hash_table.search_by_email(email)
-
-    if result:
-        print("Found:", result.name, result.phone, result.email)
-    else:
-        print("Contact not found.")
-
-elif decision == 4:
-    print("Exiting program...")
-    break
-
+        print("Invalid option.")
 
 
 
