@@ -1,5 +1,6 @@
 import Contact
 from ContactBST import ContactBST
+from ContactHashTable import ContactHashTable
 
 bst = ContactBST()
 hash_table = ContactHashTable()
