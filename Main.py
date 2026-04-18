@@ -1,9 +1,23 @@
+import csv
 import Contact
 from ContactBST import ContactBST
 from ContactHashTable import ContactHashTable
 
 bst = ContactBST()
 hash_table = ContactHashTable()
+
+try:
+    with open('Contacts.csv', 'x', newline='') as contacts:
+        header = ['name','phone','email']
+        contactWriter = csv.writer(contacts)
+        contactWriter.writerow(header)
+except FileExistsError:
+    with open ('Contacts.csv', 'r') as contacts:
+        contactReader = csv.DictReader(contacts)
+        for contact in contactReader:
+            contact = Contact.Contact(contact['name'], contact['phone'], contact['email'])
+            bst.insert(contact)
+            hash_table.insert(contact)      
 
 while True:
     print("\n1: Add contact")
@@ -20,6 +34,13 @@ while True:
         email = input("Enter email: ")
         
         contact = Contact.Contact(name, phone, email)
+
+        toCSV = {'name': contact.name, 'phone': contact.phone, 'email': contact.email}
+        header = ['name', 'phone', 'email']
+        
+        with open('Contacts.csv', 'a', newline='') as contacts:
+            contactWriter = csv.DictWriter(contacts, fieldnames=header)
+            contactWriter.writerow(toCSV)
         
         print("-" * 20)
         print("Contact " + contact.name + " made.")
@@ -55,6 +76,9 @@ while True:
 
     else:
         print("Invalid option.")
+
+
+
 
 
 
