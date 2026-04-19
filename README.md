@@ -92,7 +92,40 @@ Displaying contacts in alphabetical order
 
 Joshua Mabanglo: - - -
 
-Anthony Rurka: - - -
+Anthony Rurka:
+Hash Table (Search Functionality)
+Designed and implemented the hash table module in ContactHashTable.py
+Built the insert logic using phone number and email as keys
+Added search functions to look up contacts by:
+Phone number
+Email
+Set up the structure so contacts can be found directly instead of looping through everything
+Used hashing to make searching faster and more efficient
+
+System Integration Work
+Connected the hash table into the main program (Main.py)
+Made sure every new contact gets added into the hash table when it’s created
+Added menu options so users can search by phone or email
+Hooked up the search functions to user input so results display right away
+Kept the hash table updated during normal program use
+
+Data Consistency & Coordination
+Worked on keeping the hash table in sync with the rest of the system
+Made sure contacts are stored properly when they’re added
+Planned for syncing deletes and updates with the BST and linked list
+Helped keep the data consistent across different structures
+
+Algorithm & Design Contributions
+Used hashing to store and retrieve data more efficiently
+Focused on improving search speed compared to basic list searching
+Set up the structure so it works well alongside the BST
+Helped with overall design decisions around how data should be handled
+
+Application Behavior Improvements
+Added search functionality to make the program more useful
+Improved the menu by adding clear search options
+Made it so users get results instantly when searching
+
 
 Tessa Rachelle Esman
 
