@@ -91,10 +91,42 @@ Displaying contacts in alphabetical order
 ## Work Distribution by member:
 
 Joshua Mabanglo: - - -
+
 Anthony Rurka: - - -
-Tessa Rachelle Esman - Binary Search Tree - Designed and implemented the BST module in ContactBST.py - Developed BST insertion logic using alphabetical comparison of contact names - Implemented in-order traversal to display contacts in sored (alphabetical) order - Built BST search functionality for efficient lookup by contact name - Implemented full BST delete operation, handling: - Leaf nodes - Nodes with one child - Nodes with two children (inorder successor replacement) - Designed and implemented BST-based sorting system without relying on built-in sorting functions - System Integration work - Integrated BST into the main application workflow (Main.py) - Ensured all new contacts are inserted into the BST during runtime - Connected BST display functionality to a user-driven menu option - Implemented BST search option in the user interface - Integrated BST delete functionality with the main program flow - Data Consistency & Coordination - Coordinated BST operations with other system components to maintain consistency - Ensure contacts removed from BST are also removed from: - Hash Table - CSV storage - Helped implement the update feature using BST delete + reinsert strategy
--Algorithm & Design Contributions - Applied recursive algorithms for BST operations (insert, search, delete, traversal) - Designed system to maintain O(log n) average-case performance for name-based operations - Ensured case-sensitive comparisons for consistent sorting and searching - Contributed to overall data structure selection and system design decisions
--Application Behavior Improvements - Helped transition program from a single-run script to a loop-based interactive application - Improved output formatting for BST dispay to ensure readability - Refined menu structure and user flow
+
+Tessa Rachelle Esman
+
+- Binary Search Tree
+  - Designed and implemented the BST module in ContactBST.py
+  - Developed BST insertion logic using alphabetical comparison of contact names
+  - Implemented in-order traversal to display contacts in sored (alphabetical) order
+  - Built BST search functionality for efficient lookup by contact name
+  - Implemented full BST delete operation, handling:
+    - Leaf nodes
+    - Nodes with one child
+    - Nodes with two children (inorder successor replacement)
+  - Designed and implemented BST-based sorting system without relying on built-in sorting functions
+- System Integration work
+  - Integrated BST into the main application workflow (Main.py)
+  - Ensured all new contacts are inserted into the BST during runtime
+  - Connected BST display functionality to a user-driven menu option
+  - Implemented BST search option in the user interface
+  - Integrated BST delete functionality with the main program flow
+- Data Consistency & Coordination
+  - Coordinated BST operations with other system components to maintain consistency
+  - Ensure contacts removed from BST are also removed from:
+    - Hash Table
+    - CSV storage
+  - Helped implement the update feature using BST delete + reinsert strategy
+- Algorithm & Design Contributions
+  - Applied recursive algorithms for BST operations (insert, search, delete, traversal)
+  - Designed system to maintain O(log n) average-case performance for name-based operations
+  - Ensured case-sensitive comparisons for consistent sorting and searching
+  - Contributed to overall data structure selection and system design decisions
+- Application Behavior Improvements
+  - Helped transition program from a single-run script to a loop-based interactive application
+  - Improved output formatting for BST dispay to ensure readability
+  - Refined menu structure and user flow
 
 ## Summary:
 
