@@ -6,9 +6,10 @@ from ContactHashTable import ContactHashTable
 bst = ContactBST()
 hash_table = ContactHashTable()
 
+header = ['name', 'phone', 'email']
+
 try:
     with open('Contacts.csv', 'x', newline='') as contacts:
-        header = ['name','phone','email']
         contactWriter = csv.writer(contacts)
         contactWriter.writerow(header)
 except FileExistsError:
