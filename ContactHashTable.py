@@ -12,3 +12,11 @@ class ContactHashTable:
 
     def search_by_email(self, email):
         return self.email_table.get(email)
+    
+    def delete(self, contact):
+        if contact.phone in self.phone_table:
+            del self.phone_table[contact.phone]
+            
+        if contact.email in self.email_table:
+            del self.email_table[contact.email]
+            
