@@ -83,14 +83,14 @@ Displaying contacts in alphabetical order
 3. Use the menu to interact with the system.
 
 # Testing Notes:
-
--
--
--
+Joshua performed unit testing using pytest on our BST and table classes. Several test cases were performed on some methods in order to test its full range. For example, for the ContactBST class, the tests checked to see what happened if the search was found or not found. All of the tests ran successfully for both the BST and Hash table classes.
 
 ## Work Distribution by member:
 
-Joshua Mabanglo: - - -
+Joshua Mabanglo: 
+- Created contact object class
+- Performed Unit testing
+- Helped implement CSV integration
 
 Anthony Rurka:
 Hash Table (Search Functionality)
